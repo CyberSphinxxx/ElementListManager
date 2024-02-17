@@ -12,6 +12,7 @@ while True:
         element = input("Enter the element to add: ")
         element_list.append(element)
         print(f"Element '{element}' added successfully!")
+        
     elif choice.lower() == 'r':
         if element_list:
             element_to_remove = input("Enter the element to remove: ")
@@ -22,12 +23,15 @@ while True:
                 print("Element not found in the list!")
         else:
             print("The list is empty. Nothing to remove.")
+            
     elif choice.lower() == 'p':
         print("Printing elements in the list:")
         for element in element_list:
             print(element)
+            
     elif choice.lower() == 'q':
         print("Exiting program...")
         break
+        
     else:
         print("Invalid choice! Please enter 'a' to add, 'r' to remove, 'p' to print, or 'q' to quit.")
